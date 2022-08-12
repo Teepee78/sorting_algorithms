@@ -7,6 +7,8 @@
  */
 void quick_sort(int *array, size_t size)
 {
+	if (array == NULL || size < 2)
+		return;
 	QuickSort(array, 0, size - 1, size);
 }
 
@@ -46,7 +48,7 @@ int partition(int *array, int start, int end, size_t size)
 
 	for (i = start; i < end; i++)
 	{
-		if (array[i] <= array[pivot])
+		if (array[i] < array[pivot])
 		{
 			if (i != Pindex)
 			{
