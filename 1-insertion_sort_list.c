@@ -1,4 +1,4 @@
-#include "sort.h"
+2#include "sort.h"
 
 /**
  * insertion_sort_list - insertion sort algorithm
@@ -8,7 +8,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *temp, *key, *current;
 
-	if ((*list)->next == NULL)
+	if ((*list)->next == NULL || list == NULL || *list == NULL)
 		return;
 
 	for (current = (*list)->next; current; current = current->next)
