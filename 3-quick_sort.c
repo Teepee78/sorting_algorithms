@@ -13,7 +13,7 @@ void quick_sort(int *array, size_t size)
 /**
  * QuickSort - quick sort function
  * @array: array of integers
- * @start starting index
+ * @start: starting index
  * @end: end index
  * @size: size of array
  */
@@ -68,5 +68,5 @@ int partition(int *array, int start, int end, size_t size)
 		print_array(array, size);
 	}
 
-	return Pindex;
+	return (Pindex);
 }
