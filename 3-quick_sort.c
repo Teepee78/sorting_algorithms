@@ -21,13 +21,13 @@ void quick_sort(int *array, size_t size)
  */
 void QuickSort(int *array, int start, int end, size_t size)
 {
-	int Pindex;
+	int Pivot;
 
 	if (start < end)
 	{
-		Pindex = partition(array, start, end, size);
-		QuickSort(array, start, Pindex - 1, size);
-		QuickSort(array, Pindex + 1, end, size);
+		Pivot = partition(array, start, end, size);
+		QuickSort(array, start, Pivot - 1, size);
+		QuickSort(array, Pivot + 1, end, size);
 	}
 }
 
