@@ -7,7 +7,7 @@
  */
 void shell_sort(int *array, size_t size)
 {
-	int gap = get_gap(size), temp, prev, current;
+	int gap = get_gap(size), temp;
 	size_t i, j;
 
 	if (array == NULL || size < 2)
@@ -33,22 +33,6 @@ void shell_sort(int *array, size_t size)
 		}
 		gap = gap / 3;
 		print_array(array, size);
-	}
-	/* perform insertion sort */
-	for (i = 1; i < size; i++)
-	{
-		current = i;
-		prev = i - 1;
-		while (prev >= 0 && array[current] < array[prev])
-		{
-			/* swap values */
-			temp = array[current];
-			array[current] = array[prev];
-			array[prev] = temp;
-			/* decrement */
-			prev = prev - 1;
-			current = current - 1;
-		}
 	}
 }
 
