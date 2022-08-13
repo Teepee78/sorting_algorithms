@@ -23,3 +23,7 @@ Shell sort algorithm
 ### 101-cocktail_sort_list.c
 
 Cocktail shaker sort algorithm
+
+### 102-counting_sort.c
+
+Counting sort algorithm
