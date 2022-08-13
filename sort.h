@@ -34,5 +34,7 @@ void cocktail_sort_list(listint_t **list);
 void QuickSort(int *array, int start, int end, size_t size);
 int partition(int *array, int start, int end, size_t size);
 int get_gap(size_t size);
+listint_t *swap_nodes1(listint_t **list, listint_t *current, listint_t *temp);
+listint_t *swap_nodes2(listint_t **list, listint_t *current, listint_t *temp);
 
 #endif /* SOR_T */
