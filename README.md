@@ -15,3 +15,7 @@ Selection sort algorithm
 ### 3-quick_sort
 
 Quick sort algorithm
+
+### 100-shell_sort.c
+
+Shell sort algorithm
