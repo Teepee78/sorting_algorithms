@@ -36,6 +36,8 @@ void counting_sort(int *array, size_t size)
 	/* sum and print counting array */
 	for (i = 1; i <= largest_num; i++)
 		count_array[i].count = count_array[i].count + count_array[i - 1].count;
+	/* print struct */
+	print_struct(count_array, largest_num);
 	/* create output array */
 	for (i = 0; i < size; i++)
 	{
@@ -67,4 +69,25 @@ size_t largest_number(int *array, size_t size)
 	}
 
 	return (largest);
+}
+
+/**
+ * [print_struct - prints a struct
+ * @counting_struct: struct
+ * @largest_num: largest nnumber
+ */
+void print_struct(count_t *counting_struct, size_t largest_num)
+{
+	int *array;
+	size_t i;
+
+	array = malloc(sizeof(int) * (largest_num + 1));
+	if (array == NULL)
+		return;
+
+	for (i = 0; i <= largest_num; i++)
+		array[i] = counting_struct[i].count;
+
+	print_array(array, largest_num + 1);
+	free(array);
 }

@@ -51,5 +51,6 @@ int get_gap(size_t size);
 listint_t *swap_nodes1(listint_t **list, listint_t *current, listint_t *temp);
 listint_t *swap_nodes2(listint_t **list, listint_t *current, listint_t *temp);
 size_t largest_number(int *array, size_t size);
+void print_struct(count_t *counting_struct, size_t largest_num);
 
 #endif /* SOR_T */
