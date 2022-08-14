@@ -43,6 +43,7 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
 
 /* personal functions */
 void QuickSort(int *array, int start, int end, size_t size);
@@ -52,5 +53,7 @@ listint_t *swap_nodes1(listint_t **list, listint_t *current, listint_t *temp);
 listint_t *swap_nodes2(listint_t **list, listint_t *current, listint_t *temp);
 size_t largest_number(int *array, size_t size);
 void print_struct(count_t *counting_struct, size_t largest_num);
+void merge(size_t start, size_t middle, size_t end, int *dest, int *source);
+void Merge_Sort(size_t start, size_t end, int *array, int *copy);
 
 #endif /* SOR_T */

@@ -27,3 +27,7 @@ Cocktail shaker sort algorithm
 ### 102-counting_sort.c
 
 Counting sort algorithm
+
+### 103-merge_sort.c
+
+Merge sort algorithm
