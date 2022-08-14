@@ -12,7 +12,7 @@ void counting_sort(int *array, size_t size)
 	count_t *count_array = NULL;
 	int *output = NULL;
 
-	if (!array || size < 2)
+	if (size < 2)
 		return;
 	largest_num = largest_number(array, size);
 	count_array = malloc(sizeof(count_t) * (largest_num + 1));
