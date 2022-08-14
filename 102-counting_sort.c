@@ -21,13 +21,12 @@ void counting_sort(int *array, size_t size)
 	output = malloc(sizeof(int) * size);
 	if (output == NULL)
 		return;
-	/* initialize counting array */
+	/* initialize and set counting array */
 	for (i = 0; i <= largest_num; i++)
 	{
 		count_array[i].num = i;
 		count_array[i].count = 0;
 	}
-	/* set counting array */
 	for (i = 0; i < size; i++)
 	{
 		j = array[i];
@@ -36,7 +35,6 @@ void counting_sort(int *array, size_t size)
 	/* sum and print counting array */
 	for (i = 1; i <= largest_num; i++)
 		count_array[i].count = count_array[i].count + count_array[i - 1].count;
-	/* print struct */
 	print_struct(count_array, largest_num);
 	/* create output array */
 	for (i = 0; i < size; i++)
@@ -72,7 +70,7 @@ size_t largest_number(int *array, size_t size)
 }
 
 /**
- * [print_struct - prints a struct
+ * print_struct - prints a struct
  * @counting_struct: struct
  * @largest_num: largest nnumber
  */
