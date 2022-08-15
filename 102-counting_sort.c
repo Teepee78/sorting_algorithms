@@ -36,14 +36,14 @@ void counting_sort(int *array, size_t size)
 	for (i = 1; i <= largest_num; i++)
 		count_array[i].count = count_array[i].count + count_array[i - 1].count;
 	print_struct(count_array, largest_num);
-	/* create output array */
+	/* create output array and set sorted array */
 	for (i = 0; i < size; i++)
 	{
 		j = array[i];
 		index = count_array[j].count - 1;
+		count_array[j].count--;
 		output[index] = array[i];
 	}
-	/* set sorted array */
 	for (i = 0; i < size; i++)
 		array[i] = output[i];
 	free(output), free(count_array);
