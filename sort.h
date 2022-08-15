@@ -44,6 +44,7 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 
 /* personal functions */
 void QuickSort(int *array, int start, int end, size_t size);
@@ -55,5 +56,7 @@ size_t largest_number(int *array, size_t size);
 void print_struct(count_t *counting_struct, size_t largest_num);
 void merge(size_t start, size_t middle, size_t end, int *dest, int *source);
 void Merge_Sort(size_t start, size_t end, int *array, int *copy);
+void swap(int *array, size_t a, size_t b, size_t size);
+void heapify(int *array, size_t size, size_t i, size_t root);
 
 #endif /* SOR_T */

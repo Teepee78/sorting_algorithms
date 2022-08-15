@@ -31,3 +31,7 @@ Counting sort algorithm
 ### 103-merge_sort.c
 
 Merge sort algorithm
+
+### 104-heap_sort.c
+
+Heap sort algorithm
