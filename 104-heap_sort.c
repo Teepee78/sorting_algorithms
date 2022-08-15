@@ -19,9 +19,9 @@ void heap_sort(int *array, size_t size)
 	i = size - 1;
 	while (i > 0)
 	{
+		heapify(array, size, 0, i);
 		swap(array, i, 0, size);
 		i--;
-		heapify(array, size, 0, i);
 	}
 }
 
