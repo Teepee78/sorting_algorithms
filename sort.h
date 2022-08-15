@@ -31,6 +31,18 @@ typedef struct count_s
 	int count;
 } count_t;
 
+/**
+ * struct bucket_s - node of bucket
+ *
+ * @n: number
+ * @next: pointer to next node
+ */
+typedef struct bucket_s
+{
+	int n;
+	struct bucket_s *next;
+} bucket_t;
+
 /* Given functions */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
@@ -45,6 +57,7 @@ void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
 
 /* personal functions */
 void QuickSort(int *array, int start, int end, size_t size);
@@ -58,5 +71,8 @@ void merge(size_t start, size_t middle, size_t end, int *dest, int *source);
 void Merge_Sort(size_t start, size_t end, int *array, int *copy);
 void swap(int *array, size_t a, size_t b, size_t size);
 void heapify(int *array, size_t size, size_t i, size_t root);
+int get_current_digit(int number, int index);
+int pop_bucket(bucket_t **bucket);
+void bucket_sort(int *array, size_t size, bucket_t **bucket, int position);
 
 #endif /* SOR_T */
