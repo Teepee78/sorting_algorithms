@@ -17,12 +17,11 @@ void heap_sort(int *array, size_t size)
 		heapify(array, size, i, size - 1);
 	/* heap sort */
 	i = size - 1;
-	swap(array, i, 0, size);
 	while (i > 0)
 	{
+		swap(array, i, 0, size);
 		i--;
 		heapify(array, size, 0, i);
-		swap(array, i, 0, size);
 	}
 }
 
