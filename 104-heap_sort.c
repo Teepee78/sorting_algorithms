@@ -13,7 +13,7 @@ void heap_sort(int *array, size_t size)
 		return;
 
 	/* build heap */
-	for (i = ((size - 1) / 2) - 1; i >= 0; i--)
+	for (i = ((size - 1) / 2) - 1; i > 0; i--)
 		heapify(array, size, i, size - 1);
 	/* heap sort */
 	i = size - 1;
