@@ -57,8 +57,8 @@ void counting_sort(int *array, size_t size)
  */
 size_t largest_number(int *array, size_t size)
 {
-	size_t i = 0;
-	int largest = 0;
+	size_t i;
+	int largest = array[0];
 
 	for (i = 0; i < size; i++)
 	{
