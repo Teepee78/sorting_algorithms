@@ -47,3 +47,7 @@ Bitonic sort algorithm
 ### 107-quick_sort_hoare.c
 
 Quick sort algorithm, hoare's partition scheme
+
+### 1000-sort_deck.c
+
+Sorts a deck of cards
