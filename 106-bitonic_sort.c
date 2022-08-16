@@ -28,13 +28,13 @@ void Bitonic_Sort(int *array, size_t size, size_t low, size_t count, int dir)
 	if (count < 2)
 		return;
 	k = count / 2;
-	printf("Merging [%ld/%ld] (%s)\n", count, size, (dir == 1) ? "UP" : "DOWN");
+	printf("Merging [%ld/%ld] (%s):\n", count, size, (dir == 1) ? "UP" : "DOWN");
 	print_array(&array[low], count);
 
 	Bitonic_Sort(array, size, low, k, 1);
 	Bitonic_Sort(array, size, low + k, k, 0);
 	bitonic_merge(array, size, low, count, dir);
-	printf("Result [%ld/%ld] (%s)\n", count, size, (dir == 1) ? "UP" : "DOWN");
+	printf("Result [%ld/%ld] (%s):\n", count, size, (dir == 1) ? "UP" : "DOWN");
 	print_array(&array[low], count);
 }
 
