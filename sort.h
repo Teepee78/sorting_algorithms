@@ -77,6 +77,6 @@ int pop_bucket(bucket_t **bucket);
 void bucket_sort(int *array, size_t size, bucket_t **bucket, int position);
 void bitonic_merge(int *array, size_t size, size_t low, size_t count, int dir);
 void Bitonic_Sort(int *array, size_t size, size_t low, size_t count, int dir);
-void swap(int *array, size_t a, size_t b);
+void swap_n(int *array, size_t a, size_t b);
 
 #endif /* SOR_T */

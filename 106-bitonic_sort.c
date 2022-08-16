@@ -61,7 +61,7 @@ void bitonic_merge(int *array, size_t size, size_t low, size_t count, int dir)
 		for (i = low; i < low + k; i++)
 		{
 			if (array[i] > array[i + k])
-				swap(array, i, i + k);
+				swap_n(array, i, i + k);
 		}
 	}
 	else
@@ -69,7 +69,7 @@ void bitonic_merge(int *array, size_t size, size_t low, size_t count, int dir)
 		for (i = low; i < low + k; i++)
 		{
 			if (array[i] < array[i + k])
-				swap(array, i, i + k);
+				swap_n(array, i, i + k);
 		}
 	}
 	bitonic_merge(array, size, low, k, dir);
@@ -77,12 +77,12 @@ void bitonic_merge(int *array, size_t size, size_t low, size_t count, int dir)
 }
 
 /**
- * swap - swap elements of array
+ * swap_n - swap elements of array
  * @array: array of integers
  * @a: element a
  * @b: element b
  */
-void swap(int *array, size_t a, size_t b)
+void swap_n(int *array, size_t a, size_t b)
 {
 	int temp;
 
