@@ -75,7 +75,7 @@ void heapify(int *array, size_t size, size_t i, size_t root);
 int get_current_digit(int number, int index);
 int pop_bucket(bucket_t **bucket);
 void bucket_sort(int *array, size_t size, bucket_t **bucket, int position);
-void bitonic_merge(int *array, size_t size, size_t low, size_t count, int direction);
-void Bitonic_Sort(int *array, size_t size, size_t low, size_t count, int direction);
+void bitonic_merge(int *array, size_t size, size_t low, size_t count, int dir);
+void Bitonic_Sort(int *array, size_t size, size_t low, size_t count, int dir);
 
 #endif /* SOR_T */
