@@ -43,3 +43,7 @@ Radix sort algorithm
 ### 106-bitonic_sort.c
 
 Bitonic sort algorithm
+
+### 107-quick_sort_hoare.c
+
+Quick sort algorithm, hoare's partition scheme

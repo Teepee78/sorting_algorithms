@@ -59,6 +59,7 @@ void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
 
 /* personal functions */
 void QuickSort(int *array, int start, int end, size_t size);
@@ -78,5 +79,7 @@ void bucket_sort(int *array, size_t size, bucket_t **bucket, int position);
 void bitonic_merge(int *array, size_t size, size_t low, size_t count, int dir);
 void Bitonic_Sort(int *array, size_t size, size_t low, size_t count, int dir);
 void swap_n(int *array, size_t a, size_t b);
+int partition_hoare(int *array, int start, int end, size_t size);
+void QuickSort_hoare(int *array, int start, int end, size_t size);
 
 #endif /* SOR_T */
