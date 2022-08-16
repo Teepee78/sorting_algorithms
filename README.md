@@ -39,3 +39,7 @@ Heap sort algorithm
 ### 105-radix_sort.c
 
 Radix sort algorithm
+
+### 106-bitonic_sort.c
+
+Bitonic sort algorithm
